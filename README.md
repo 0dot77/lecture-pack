@@ -96,22 +96,12 @@
 - [Claude Code](https://claude.ai/code)가 설치되어 있어야 합니다
 - [Node.js](https://nodejs.org)가 설치되어 있어야 합니다 (PDF 내보내기에 필요)
 
-### 설치
+### 설치 (한 줄이면 끝)
 
-터미널에서 아래 명령어를 순서대로 실행하세요.
+터미널에서 아래 명령어를 실행하세요. 필요한 모든 스킬(frontend-slides 포함)이 자동으로 설치됩니다.
 
 ```bash
-# 1. 이 저장소를 다운로드합니다
-git clone https://github.com/0dot77/lecture-pack.git
-
-# 2. 스킬 파일들을 Claude Code 스킬 폴더에 복사합니다
-cp -r lecture-pack/lesson-plan ~/.claude/skills/
-cp -r lecture-pack/lecture-slides ~/.claude/skills/
-cp -r lecture-pack/lecture-export ~/.claude/skills/
-
-# 3. (슬라이드 기능을 쓰려면) frontend-slides 스킬도 필요합니다
-#    아직 없다면 아래 저장소에서 설치하세요:
-#    https://github.com/anthropics/claude-code-skills
+git clone https://github.com/0dot77/lecture-pack.git && cd lecture-pack && bash install.sh
 ```
 
 설치가 끝나면 Claude Code를 재시작하세요. 이후 `/lesson-plan`, `/lecture-slides`, `/lecture-export` 명령어를 바로 사용할 수 있습니다.
